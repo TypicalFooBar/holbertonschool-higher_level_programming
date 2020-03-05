@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "gcc",
+            "args": [
+				"-g",
+                "-Wall",
+                "-pedantic",
+                "-Werror",
+				"-Wextra",
+				"${workspaceFolder}/test/*.c"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/test"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
