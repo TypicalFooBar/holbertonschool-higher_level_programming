@@ -11,7 +11,7 @@ def uppercase(str):
             offset = 0
 
         # Print the uppercase ascii character
-        print(chr(ord(c) - offset), end='')
+        print("{}".format(chr(ord(c) - offset)), end='')
 
     # Print a new line
     print()
