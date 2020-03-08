@@ -1,6 +1,4 @@
 #!/usr/bin/python3
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-
-for c in alphabet:
-    print("{}".format(c), end='')
+for i in range(97, 122):
+    print("{}".format(chr(i)), end='')
