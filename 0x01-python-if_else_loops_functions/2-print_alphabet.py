@@ -3,4 +3,4 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 for c in alphabet:
-    print(c, end='')
+    print("{}".format(c), end='')
