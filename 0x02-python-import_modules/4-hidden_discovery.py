@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import hidden4
+import hidden_4
 
 def main():
-    names = dir(hidden4)
+    names = dir(hidden_4)
     for name in names:
         if not name.startswith("__"):
             print(name)
