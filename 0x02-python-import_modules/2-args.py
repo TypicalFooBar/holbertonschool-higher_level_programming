@@ -16,7 +16,7 @@ def main():
             if i == 0:
                 continue
             else:
-                print("{} {}".format(i, sys.argv[i]))
+                print("{}: {}".format(i, sys.argv[i]))
 
 if __name__ == "__main__":
     main()
