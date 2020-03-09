@@ -6,9 +6,12 @@ def main():
 
     if argc == 0:
         print("0 arguments.")
-    elif argc > 0:
+    elif argc == 1:
+        print("1 argument:")
+    else:
         print("{} arguments:".format(argc))
 
+    if argc > 0:
         for i in range(len(sys.argv)):
             if i == 0:
                 continue
