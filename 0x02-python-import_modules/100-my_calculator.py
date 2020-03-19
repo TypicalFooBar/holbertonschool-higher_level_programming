@@ -9,7 +9,7 @@ def main():
     secondInt = 0
     operator = '+'
     result = 0
-    
+
     if argc != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
