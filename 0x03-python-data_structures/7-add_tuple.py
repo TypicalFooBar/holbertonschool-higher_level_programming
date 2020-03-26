@@ -15,4 +15,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     for i in range(bSize):
         sumTuple[i] += tuple_b[i]
 
-    return (sumTuple[0], sumTuple[1])
+    return tuple(sumTuple)
