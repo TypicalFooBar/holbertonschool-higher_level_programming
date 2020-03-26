@@ -2,10 +2,10 @@
 
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    sumTuple = [0, 0]
-
     aSize = len(tuple_a)
     bSize = len(tuple_b)
+    maxSize = max(aSize, bSize)
+    sumTuple = [0] * maxSize
 
 
 
