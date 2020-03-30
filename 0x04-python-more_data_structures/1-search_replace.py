@@ -2,10 +2,7 @@
 
 
 def search_replace(my_list, search, replace):
-    newMatrix = [row[:] for row in matrix]
+    newList = []
+    newList[:] = [(replace if x is search else x) for x in my_list]
 
-    for row in range(len(matrix)):
-        for col in range(len(matrix[row])):
-            newMatrix[row][col] = newMatrix[row][col] ** 2
-
-    return newMatrix
+    return newList
