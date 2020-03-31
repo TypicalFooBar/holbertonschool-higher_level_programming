@@ -26,7 +26,7 @@ def roman_to_int(roman_string):
                     sum += 100
             elif c is 'D':
                 sum += 500
-            
+
             lastRoman = c
 
     return sum
