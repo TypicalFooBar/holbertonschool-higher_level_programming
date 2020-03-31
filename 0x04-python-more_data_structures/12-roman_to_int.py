@@ -16,7 +16,11 @@ def roman_to_int(roman_string):
 
                 lastCharWasI = False
             elif c is 'X':
-                sum += 10
+                if lastCharWasI:
+                    sum += 8
+                else:
+                    sum += 10
+
                 lastCharWasI = False
             elif c is 'L':
                 sum += 50
