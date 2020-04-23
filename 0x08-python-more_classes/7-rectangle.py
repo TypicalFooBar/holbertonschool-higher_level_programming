@@ -52,10 +52,7 @@ class Rectangle:
         else:
             for row in range(self.__height):
                 for _ in range(self.__width):
-                    if isinstance(self.print_symbol, list):
-                        value += str(self.print_symbol)
-                    else:
-                        value += self.print_symbol
+                    value += str(self.print_symbol)
 
                 if row < self.__height - 1:
                     value += "\n"
