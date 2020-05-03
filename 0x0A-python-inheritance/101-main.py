@@ -11,6 +11,6 @@ print(mc.name)
 try:
     a = "My String"
     add_attribute(a, "name", "Bob")
-    #print(a.name)
+    print(a.name)
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
