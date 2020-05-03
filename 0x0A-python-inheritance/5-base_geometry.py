@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-# BaseGeometry - Description
+"""Base class"""
 class BaseGemoetry:
     pass
