@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
-"""Base class"""
-class BaseGemoetry:
+
+class BaseGeometry:
+    """Base Geometry class"""
     pass
