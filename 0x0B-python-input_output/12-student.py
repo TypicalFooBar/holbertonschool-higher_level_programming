@@ -17,6 +17,11 @@ class Student:
         else:
             studentAttrs = {}
             for item in attrs:
-                studentAttrs[item] = self.__dict__[item]
+                try:
+                    studentAttrs[item] = self.__dict__[item]
+                except KeyError:
+                    # Do nothing if the key did not exist
+                    pass
+                    
 
             return studentAttrs
