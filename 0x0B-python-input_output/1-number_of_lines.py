@@ -6,7 +6,7 @@ def number_of_lines(filename=""):
 
     with open(filename) as f:
         atLeastOneLine = False
-        
+
         for i, line in enumerate(f):
             atLeastOneLine = True
 
