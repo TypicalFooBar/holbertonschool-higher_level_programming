@@ -22,6 +22,5 @@ class Student:
                 except KeyError:
                     # Do nothing if the key did not exist
                     pass
-                    
 
             return studentAttrs
