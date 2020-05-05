@@ -6,4 +6,4 @@ def read_file(filename=""):
         data = f.read()
     
     f.close()
-    print(data)
+    print(data, end="")
