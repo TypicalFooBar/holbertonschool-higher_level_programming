@@ -2,8 +2,12 @@
 
 
 def number_of_lines(filename=""):
+    i = 0
+
     with open(filename) as f:
         for i, line in enumerate(f):
             pass
+        # Account for starting the index at 0
+        i += 1
 
-    return i + 1
+    return i
