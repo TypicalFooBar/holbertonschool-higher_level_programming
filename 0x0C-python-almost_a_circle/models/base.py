@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Doc"""
+"""Description"""
 
 class Base:
-    """Doc"""
+    """Description"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Doc"""
+        """Description"""
         self.id = self.__nb_objects + 1
 
         if id is not None:
