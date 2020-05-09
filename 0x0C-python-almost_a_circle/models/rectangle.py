@@ -104,7 +104,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Description"""
-        if args is not None:
+        if args is not None and len(args) > 0:
             try:
                 self.id = args[0]
                 self.width = args[1]
@@ -116,7 +116,7 @@ class Rectangle(Base):
                 # not included because it was out of range
                 pass
         else:
-            for key, value in kwargs:
+            for key, value in kwargs.items():
                 if key == "id":
                     self.id = value
                 elif key == "width":
