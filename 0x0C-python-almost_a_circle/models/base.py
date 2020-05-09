@@ -24,5 +24,5 @@ class Base:
         """Descriptions"""
         if list_dictionaries is None:
             return "[]"
-        else
+        else:
             return json.dumps(list_dictionaries)
