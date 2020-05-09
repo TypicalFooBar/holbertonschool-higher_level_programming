@@ -60,3 +60,22 @@ class Base:
             new = cls(1)
         new.update(**dictionary)
         return new
+
+    @classmethod
+    def load_from_file(cls):
+        filename = "{}.json".format(cls.__name__)
+        jsonString = ""
+
+        try:
+            with open(filename, "r") as f:
+                jsonString = f.read()
+        except:
+            jsonString = "[]"
+
+        jsonObjectList = cls.from_json_string(jsonString)
+
+        objList = []
+        for item in jsonObjectList:
+            objList.append(cls.create(**item))
+
+        return objList
