@@ -38,7 +38,7 @@ class Base:
             for obj in list_objs:
                 jsonObjects.append(Base.to_json_string(cls.to_dictionary(obj)))
 
-            jsonText = Base.to_json_string(jsonObjects)
+            jsonText = cls.to_json_string(jsonObjects)
 
         with open("{}.json".format(cls.__name__), "w") as f:
             f.write(jsonText)
