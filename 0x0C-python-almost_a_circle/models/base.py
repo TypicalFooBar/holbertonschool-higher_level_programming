@@ -19,6 +19,7 @@ class Base:
         else:
             Base.__nb_objects += 1
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Descriptions"""
         return json.dumps(list_dictionaries)
