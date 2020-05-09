@@ -2,6 +2,9 @@
 """Description"""
 
 
+import json
+
+
 class Base:
     """Description"""
 
@@ -15,3 +18,7 @@ class Base:
             self.id = id
         else:
             Base.__nb_objects += 1
+
+    def to_json_string(list_dictionaries):
+        """Descriptions"""
+        return json.dumps(list_dictionaries)
