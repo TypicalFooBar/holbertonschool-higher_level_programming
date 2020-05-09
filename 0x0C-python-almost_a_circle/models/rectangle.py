@@ -90,4 +90,5 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """Description"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
