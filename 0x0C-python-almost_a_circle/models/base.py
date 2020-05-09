@@ -46,6 +46,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """Description"""
         if json_string is None or json_string == "":
             return []
         else:
