@@ -30,15 +30,16 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """Description"""
-        if list_objs is None:
-            return
+        jsonText = "[]"
 
-        jsonObjects = []
-        for obj in list_objs:
-            jsonObjects.append(Base.to_json_string(cls.to_dictionary(obj)))
+        if list_objs is not None:
+            jsonObjects = []
 
-        jsonText = Base.to_json_string(jsonObjects)
+            for obj in list_objs:
+                jsonObjects.append(Base.to_json_string(cls.to_dictionary(obj)))
+
+            jsonText = Base.to_json_string(jsonObjects)
+
         with open("{}.json".format(cls.__name__), "w") as f:
             f.write(jsonText)
-
         f.close()
