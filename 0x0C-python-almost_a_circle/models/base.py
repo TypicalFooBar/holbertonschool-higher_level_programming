@@ -50,4 +50,4 @@ class Base:
         if json_string is None or json_string == "":
             return []
         else:
-            json.loads(json_string)
+            return json.loads(json_string)
