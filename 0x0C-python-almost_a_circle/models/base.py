@@ -43,3 +43,10 @@ class Base:
         with open("{}.json".format(cls.__name__), "w") as f:
             f.write(jsonText)
         f.close()
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == "":
+            return []
+        else:
+            json.loads(json_string)
