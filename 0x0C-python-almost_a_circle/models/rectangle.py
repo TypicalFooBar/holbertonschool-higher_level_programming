@@ -84,7 +84,15 @@ class Rectangle(Base):
 
     def display(self):
         """Description"""
+        # Print empty rows for each column
+        for _ in range(self.y):
+            print()
+
         for _ in range(self.height):
+            # Print space ahead of each row
+            for _ in range(self.x):
+                print(" ", end="")
+            # Print this row for the square
             for _ in range(self.width):
                 print("#", end="")
             print()
