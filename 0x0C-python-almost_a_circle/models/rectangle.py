@@ -104,8 +104,13 @@ class Rectangle(Base):
 
     def update(self, *args):
         """Description"""
-        self.id = args[0]
-        self.width = args[1]
-        self.height = args[2]
-        self.x = args[3]
-        self.y = args[4]
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except IndexError:
+            # We've updated all we could and hit one that was
+            # not included because it was out of range
+            pass
