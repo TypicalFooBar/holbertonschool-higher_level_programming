@@ -5,7 +5,7 @@ let count = -2;
 process.argv.forEach((val, index) => {
 	count++;
 
-	if (count > 0)
+	if (count == 1)
 		console.log(val);
 });
 
