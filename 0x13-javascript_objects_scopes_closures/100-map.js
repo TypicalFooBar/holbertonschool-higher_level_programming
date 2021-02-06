@@ -2,11 +2,7 @@
 
 const list = require('./100-data').list;
 
-let newList = [];
-
-list.forEach(value => {
-	newList.push(value)
-})
+let newList = [...list];
 
 newList.map((value, index) => {
 	newList[index] = value * index
