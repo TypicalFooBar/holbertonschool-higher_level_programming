@@ -13,7 +13,7 @@ else
 {
 	// Sort the list
 	args.sort((a, b) => {
-		return a - b;
+		return b - a;
 	})
 
 	console.log(args[1]);
