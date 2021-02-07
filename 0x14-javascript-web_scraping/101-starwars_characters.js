@@ -16,12 +16,9 @@ function getCharacterNameAsync(characterUrl) {
 
 request(`https://swapi-api.hbtn.io/api/films/${process.argv[2]}`, async (error, response, body) => {
 	let data = JSON.parse(body)
-	let characterNames = []
 
 	for (let i = 0; i < data.characters.length; i++) {
 		let name = await getCharacterNameAsync(data.characters[i])
-		characterNames.push(name)
+		console.log(name)
 	}
-
-	console.log(characterNames)
 })
