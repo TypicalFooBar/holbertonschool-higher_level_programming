@@ -4,4 +4,4 @@
 
 class LockedClass:
     """ LockedClass Doc """
-    __slots__ = "First Name"
+    __slots__ = 'first_name'
