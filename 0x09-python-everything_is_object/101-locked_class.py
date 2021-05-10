@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-""" Module """
+"""
+Create a locked class
+wherein the only malleable
+variable is first_name
+"""
 
 
-class LockedClass:
-    """ LockedClass Doc """
+class LockedClass():
+    """ Class Doc """
     __slots__ = 'first_name'
