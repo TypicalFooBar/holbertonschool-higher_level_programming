@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-def magic_string(holbertonString=""):
-    # magic_string.returnString = magic_string.returnString + ", Holberton" if hasattr(magic_string, "returnString") else "Holberton"
-    holbertonString += "Holberton" if holbertonString == "" else ", Holberton"
-    return holbertonString
+def magic_string(h="Holberton"):
+    magic_string.s=magic_string.s+', '+h if hasattr(magic_string, "s") else h
+    return magic_string.s
