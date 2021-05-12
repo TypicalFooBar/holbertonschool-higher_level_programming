@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Module doc """
 
-
 import json
+
 
 def load_from_json_file(filename):
     """ Function doc"""
